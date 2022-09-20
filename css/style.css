@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+/* COMMON */
+.white { color:#fff; }
+.purple { color:#49376E; }
+.inner { width: 1630px; margin:0 auto; }
+
+* {
+  margin: 0;padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
+}
+body {
+  text-align: center;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url('/img/headerbg.png') no-repeat center / cover;
+}
+header span {
+  font-size: 48px;
+  font-weight: 700;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;top: 30%;
+  transform: translate(-50%,-50%);
+}
+
+#gifs ul {
+  display: flex;
+  margin-top: 180px;
+}
+#gifs li { width: 25%; }
+#gifs img { width: 200px; }
+#gifs h6 { font-size: 36px; margin:36px auto 17px; }
+#gifs span { font-size: 24px; }
+
+#intro { margin-top: 180px; }
+#intro .wrap {
+  display: flex;
+  justify-content: center;
+}
+#intro .wrap * { width: 50%; }
+#intro h4 { font-size: 74px; }
+#intro span { font-size: 20px; }
+
+#intro .wrap:nth-child(1) h4 { text-align: right; margin-right: 50px;}
+#intro .wrap:nth-child(1) span { text-align: left; margin-left: 50px; }
+#intro .wrap:nth-child(2) h4 { text-align: left; margin-left: 50px; }
+#intro .wrap:nth-child(2) span { text-align: right; margin-right: 50px; }
+#intro .wrap:nth-child(2) {
+  margin-top:120px;
+  flex-direction: row-reverse;
+}
