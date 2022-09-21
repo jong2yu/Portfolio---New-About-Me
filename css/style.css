@@ -21,7 +21,7 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  background: url('/img/headerbg.png') no-repeat center / cover;
+  background: url('../img/headerbg.png') no-repeat center / cover;
 }
 header span {
   font-size: 48px;
@@ -50,11 +50,80 @@ header span {
 #intro h4 { font-size: 74px; }
 #intro span { font-size: 20px; }
 
-#intro .wrap:nth-child(1) h4 { text-align: right; margin-right: 50px;}
-#intro .wrap:nth-child(1) span { text-align: left; margin-left: 50px; }
-#intro .wrap:nth-child(2) h4 { text-align: left; margin-left: 50px; }
-#intro .wrap:nth-child(2) span { text-align: right; margin-right: 50px; }
 #intro .wrap:nth-child(2) {
   margin-top:120px;
   flex-direction: row-reverse;
 }
+#intro .wrap:nth-child(1) h4 { text-align: right; margin-right: 50px;}
+#intro .wrap:nth-child(1) span { text-align: left; margin-left: 50px; }
+#intro .wrap:nth-child(2) h4 { text-align: left; margin-left: 50px; }
+#intro .wrap:nth-child(2) span { text-align: right; margin-right: 50px; }
+
+#skills {
+  margin-top: 200px;
+  width: 100vw;
+  height: 660px;
+  background: #191B3F;
+  position: relative;
+  overflow: hidden;
+  user-select:none;
+}
+#skills .text {
+  display: flex;
+  animation: textSlide 30s linear infinite;
+}
+#skills .text p {
+  font-size: 25vw;
+  font-weight: 700;
+  line-height: 660px;
+  margin:0 7vw;
+  opacity: 40%;
+}
+#skills ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;top: 50%;
+  font-size: 6rem;
+  font-weight: 700;
+  color:#fff;
+}
+#skills ul {
+  transform: translate(-50%,-40%);
+  width: 80%; height: 80%;
+  flex-wrap: wrap;
+}
+#skills li { margin:0 4vw; }
+#skills li img { width: 110px; height:115px; display: block; }
+#skills li h6 { display: inline; }
+#skills li span { font-size: 2.5rem; }
+@keyframes textSlide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+#project .wrap { min-width: 1280px; }
+#project h2 { font-size: 86px; margin:190px auto 120px;}
+#project h6 { font-size: 56px; position: relative; display: inline; }
+#project h6::before {
+  content: '';
+  position: absolute;
+  left: 50%;bottom: -6px;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 4px;
+  background: #49376E;
+}
+#project img { margin:60px auto; }
+
+
+/* Slider */
+#project .slick-dots button {
+  text-indent: -9999px;
+  border: none;
+  width: 25px;height: 25px;
+  border-radius: 50%;
+  transition: .3s;
+}
+#project .slick-dots button:hover { background: #49376E; cursor: pointer; }
+#project .slick-dots li.slick-active button { background: #49376E; }
