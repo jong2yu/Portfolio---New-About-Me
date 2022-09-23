@@ -230,5 +230,6 @@ footer .right {
   border-radius: 22.5px;
   display: block;
   margin: 35px auto;
+  border: none;
   cursor: pointer;
 }
