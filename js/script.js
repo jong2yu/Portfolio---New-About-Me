@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   // Slider
   $('#project .slider').slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     arrows: true,

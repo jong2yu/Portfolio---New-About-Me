@@ -102,9 +102,15 @@ header span {
   to { transform: translateX(-100%); }
 }
 
-#project .wrap { min-width: 1280px; }
-#project h2 { font-size: 86px; margin:190px auto 120px;}
-#project h6 { font-size: 56px; position: relative; display: inline; }
+#project .slider { display: flex; align-items: center; }
+#project .wrap { margin:0 60px; }
+#project h2 { font-size: 86px; margin:190px auto 230px;}
+#project h6 {
+  font-size: 56px;
+  position: relative;
+  display: inline;
+  white-space:nowrap;
+}
 #project h6::before {
   content: '';
   position: absolute;
@@ -114,8 +120,7 @@ header span {
   height: 4px;
   background: #49376E;
 }
-#project img { margin:60px auto; }
-
+#project img { width: 100%; margin:60px auto; }
 
 /* Slider */
 #project .slick-dots button {
@@ -125,5 +130,105 @@ header span {
   border-radius: 50%;
   transition: .3s;
 }
+#project .slick-dots {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%; top: -100px;
+  transform: translateX(-50%);
+  width: 200px;
+}
 #project .slick-dots button:hover { background: #49376E; cursor: pointer; }
 #project .slick-dots li.slick-active button { background: #49376E; }
+#project .slick-arrow { font-size:150px; color: #8E8E8E; font-weight: bold; cursor: pointer; }
+
+footer {
+  margin: 180px auto 0;
+  width: 1920px;
+  height: 1270px;
+  background: url('../img/footerbg.png') no-repeat center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .left h6 {
+  font-size: 86px;
+  text-align: left;
+}
+footer .left p {
+  font-size: 24px;
+  text-align: left;
+}
+footer .left img { margin:100px auto 0; }
+footer .left ul {
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+footer .right {
+  width: 1108px; height: 745px;
+  background: url('../img/browser.png') no-repeat center / cover;
+  position: relative;
+}
+.browser {
+  width: 97%;height: 84%;
+  position: absolute;
+  left: 0;bottom: 0;
+  text-align: left;
+}
+.browser li {
+  width: 100%; height: 70px;
+  border-bottom: 1px dotted #000;
+  font-size: 24px;
+  padding: 15px 60px;
+}
+.browser li span {
+  display: inline-block;
+  width: 100px;
+}
+.browser li input {
+  font-size: 24px;
+  margin-left: 40px;
+  border: none;
+}
+.browser .wrap {
+  padding:0 60px;
+  position: relative;
+}
+.browser strong {
+  display: block;
+  font-size: 16px;
+  line-height: 60px;
+  margin-bottom: 16px;
+}
+.browser .wrap span {
+  font-size: 16px;
+  padding: 10px 660px 10px 30px;
+  background: #DDE1E5;
+  border-radius: 6px;
+}
+.browser .check {
+  position: absolute;
+  left: 320px;top: 82px;
+}
+.browser .message {
+  display: block;
+  font-size: 16px;
+  margin-top: 40px;
+  width: 95.6%;
+  height: 210px;
+  padding: 0 30px;
+  border: 1px dotted #000;
+}
+.browser .wrap button {
+  font-size: 20px;
+  font-weight: bold;
+  width: 200px;height: 45px;
+  background: #49376E;
+  border-radius: 22.5px;
+  display: block;
+  margin: 35px auto;
+  cursor: pointer;
+}

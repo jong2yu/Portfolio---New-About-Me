@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New About Me</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Slick -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <!-- Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- JS -->
+  <!-- jQuery -->
   <script src="js/jquery-3.6.1.min.js"></script>
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- Counter Up -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
-  <!-- Slick -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- JS -->
   <script src="js/script.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -100,40 +100,72 @@
   <div id="project">
     <h2 class="purple">PROJECT</h2>
     <div class="slider">
-
-      <!-- Project List -->
       <div class="wrap">
         <h6 class="purple">케이스온</h6>
-        <a href="#"><img src="img/project-caseon.png" alt="img"></a>
-        <p></p>
+        <a href="https://jong2yu.github.io/Portfolio---Case-On/"><img src="img/project-caseon.png" alt="img"></a>
       </div>
-      <!-- Project List -->
       <div class="wrap">
         <h6 class="purple">해리포터</h6>
-        <a href="#"><img src="img/project-harrypotter.png" alt="img"></a>
-        <p></p>
+        <a href="https://jong2yu.github.io/Portfolio---Harry-Potter/"><img src="img/project-harrypotter.png" alt="img"></a>
       </div>
-      <!-- Project List -->
       <div class="wrap">
         <h6 class="purple">웨딩</h6>
-        <a href="#"><img src="img/project-wedding.png" alt="img"></a>
-        <p></p>
+        <a href="https://jong2yu.github.io/Portfolio---Wedding/"><img src="img/project-wedding.png" alt="img"></a>
       </div>
-      <!-- Project List -->
       <div class="wrap">
         <h6 class="purple">와인</h6>
-        <a href="#"><img src="img/project-wine.png" alt="img"></a>
-        <p></p>
+        <a href="https://jong2yu.github.io/Portfolio---Wine/"><img src="img/project-wine.png" alt="img"></a>
       </div>
-      <!-- Project List -->
       <div class="wrap">
         <h6 class="purple">헬스</h6>
-        <a href="#"><img src="img/project-health.png" alt="img"></a>
-        <p></p>
+        <a href="https://jong2yu.github.io/Portfolio---HealthGYM/"><img src="img/project-health.png" alt="img"></a>
       </div>
-
     </div>
   </div>
+
+  <footer>
+    <div class="left white">
+      <h6>CONTACT</h6>
+      <p>
+        저의 포트폴리오를 봐주셔서 감사합니다.<br>
+        알고 싶으신것이 있으시다면 말씀해주세요 :)
+      </p>
+      <img src="img/me.png" alt="img">
+      <ul>
+        <li><a href="https://github.com/jong2yu"><img src="img/icon-github.png" alt="img"></a></li>
+        <li><a href="https://codepen.io/jong2yu"><img src="img/icon-codepen.png" alt="img"></a></li>
+        <li><a href="https://www.notion.so/jong2yu/b8f9bc86e77e439a8f119a2799c648d4"><img src="img/icon-notion.png" alt="img"></a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="browser">
+
+        <form action="https://formsubmit.co/jong2yu@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Email wooo!">
+
+          <ul>
+            <li>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Name" required>
+            </li>
+            <li>
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="E-mail" required>
+            </li>
+          </ul>
+
+          <div class="wrap">
+            <strong>본인은 개인정보 보호법 제15조에 의거하여 본인의 개인정보(이메일, 이름)를 제공할 것을 동의합니다.</strong>
+            <span>개인정보 수집 내용에 동의합니다.</span>
+            <input class="check" type="checkbox" name="color" value="red">
+            <input class="message" type="text" name="message" placeholder="Write Your Message" required>
+            <button class="white" type="submit">SEND</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
