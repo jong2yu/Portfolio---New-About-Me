@@ -22,14 +22,59 @@ header {
   width: 100vw;
   height: 100vh;
   background: url('../img/headerbg.png') no-repeat center / cover;
+  position: relative;
 }
-header span {
+header .intro {
   font-size: 48px;
   font-weight: 700;
   white-space: nowrap;
   position: absolute;
   left: 50%;top: 30%;
   transform: translate(-50%,-50%);
+}
+header .star {
+  position: absolute;
+  display: inline-block;
+  width: 6px;height: 6px;
+  background: #ffecbe;
+  border-radius: 50%;
+  animation: twinkle 4s linear infinite;
+}
+@keyframes twinkle {
+  0% { box-shadow: 0 0 16px 0 #ffecbe; }
+  50% { box-shadow: 0 0 0 0 #ffecbe; }
+  100% { box-shadow: 0 0 16px 0 #ffecbe; }
+}
+header .star:nth-child(2) { left: 14%;top: 20%; }
+header .star:nth-child(3) {
+  width: 6.6px;height: 6.6px;
+  left: 46%;
+  top: 56%;
+  animation-delay: 0.6s;
+}
+header .star:nth-child(4) {
+  width: 6.6px;height: 6.6px;
+  left: 46%;
+  top: 66px;
+  animation-delay: 1.6s;
+}
+header .star:nth-child(5) {
+  width: 7px;height: 7px;
+  left: 77%;
+  top: 77px;
+  animation-delay: 2.7s;
+}
+header .star:nth-child(6) {
+  width: 8px;height: 8px;
+  left: 68%;
+  top: 18%;
+  animation-delay: 0.8s;
+}
+header .star:nth-child(7) {
+  width: 9px;height: 9px;
+  left: 89%;
+  top: 9%;
+  animation-delay: 0.9s;
 }
 
 #gifs ul {
@@ -232,4 +277,10 @@ footer .right {
   margin: 35px auto;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+  html {
+    border: 10px solid red;
+  }
 }
