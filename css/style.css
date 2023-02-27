@@ -148,7 +148,8 @@ header .star:nth-child(7) {
 }
 
 #project .slider { display: flex; align-items: center; }
-#project .wrap { margin:0 60px; }
+#project .slider .slick-list { width: 100%; }
+#project .slider .wrap { margin: 0 30px; }
 #project h2 { font-size: 86px; margin:190px auto 230px;}
 #project h6 {
   font-size: 56px;
@@ -237,6 +238,7 @@ footer .right {
   font-size: 24px;
   margin-left: 40px;
   border: none;
+  border-bottom: 1px solid gray;
 }
 .browser .wrap {
   padding:0 60px;
@@ -245,18 +247,18 @@ footer .right {
 .browser strong {
   display: block;
   font-size: 16px;
-  line-height: 60px;
-  margin-bottom: 16px;
+  margin: 1.6rem 0 2rem;
 }
-.browser .wrap span {
+.browser .wrap label {
   font-size: 16px;
-  padding: 10px 660px 10px 30px;
+  padding: 10px 50px 10px 20px;
   background: #DDE1E5;
   border-radius: 6px;
 }
-.browser .check {
-  position: absolute;
-  left: 290px;top: 82px;
+.browser #check {
+  position: relative;
+  left: -36px;top: .5rem;
+  width: 2rem;height: 2rem;
 }
 .browser .message {
   display: block;
